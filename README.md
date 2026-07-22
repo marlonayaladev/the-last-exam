@@ -1,59 +1,26 @@
-![](https://github.com/Microsoft/Imagine_stealthbot/blob/master/Microsoft-Imagine.png)
+![Banner del juego](Assets/images/banner.jpeg)
 
-## Welcome to Microsoft Imagine's Stealthbot
-Hello from the [Microsoft Imagine team](http://imagine.microsoft.com)! Thanks for checking out our game, **Stealthbot**.  Program clever AI to hunt down the player's Stealthbot!
+# 🏫 Juego Campus Nocturno (Estilo PS1)
 
-## Microsoft Imagine?
-Microsoft Imagine gives you the tools you need to experiment, explore, and launch your ideas.  Learn the basics of coding and you can create anything you dream. See where you can take code, and where coding can take you.  
+Un juego de sigilo y exploración en 3D con estética retro de PlayStation 1 (LowPoly). La premisa sigue a un estudiante frustrado tras desaprobar un examen final, quien decide infiltrarse en la universidad de noche (Pabellón J) para recuperar los exámenes del profesor.
 
-## What is this?
-![gameplay sample](https://github.com/Microsoft/Imagine_stealthbot/blob/master/StealthbotGameplay.gif)
+## 🛠️ Requisitos e Instalación
 
-This repository holds the assets and C# source code for the game, **Stealthbot**. 
+Para abrir este proyecto y reproducir las animaciones y cinemáticas correctamente, necesitas el siguiente entorno:
 
-If you're new to Unity, C#, or just need some guidance overall, [head to the Stealthbot page](https://msdn.microsoft.com/imagine/imagine-create027) on the [Microsoft Imagine site](http://imagine.microsoft.com) and follow our steps in the embedded Office Mix to complete the code for your own version of the game.
+### 1. Motor Gráfico
+* **Unity Editor:** Versión `2022.3.62f3` (Built-in Render Pipeline).
+* Se recomienda usar Unity Hub para gestionar la versión.
 
-Otherwise, feel free to use our Stealthbot code and assets to start building the kinds of games you like to play in Unity and C#, and develop the skills to turn your own ideas into something real.  
+### 2. Paquetes de Unity (Package Manager)
+Asegúrate de instalar o verificar estos paquetes desde `Window > Package Manager` (en el Unity Registry):
+* **ProBuilder:** Utilizado para el bloqueo de niveles (Level Blockout) y la arquitectura de los cuartos.
+* **Timeline:** Utilizado para secuenciar las cinemáticas (Ej: la escena inicial del estudiante en su cuarto).
 
-## How do I start?
-To get started with Stealthbot, you'll want to install the following:
-* [GitHub Desktop](https://desktop.github.com/)
-* [Unity (5.2 or higher)](http://unity3d.com/get-unity)
-* [Visual Studio Community 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx) (Note that you can choose to install VS Community 2015 during your Unity installation.)
+### 3. Assets Externos Utilizados
+* **Modelos 3D:** Muebles *Low Poly* y maniquí humanoide genérico.
+* **Texturas:** Texturas de baja resolución (256x256) con el `Filter Mode` configurado en `Point (no filter)` para lograr el efecto "crujiente" de PS1.
+* **Animaciones (Mixamo):** El proyecto utiliza animaciones extraídas de Mixamo aplicadas a un rig `Humanoid`. Para editar o agregar nuevas, importar los archivos `.fbx` (Without Skin) y ajustar el *Animation Type* a Humanoid en el Inspector.
 
-The [Stealthbot page's Office Mix](https://msdn.microsoft.com/imagine/imagine-create027) has installation instructions if you need them.
-
-## How do I use GitHub Desktop to get this?
-Never done this before and just want the files to work with on your own? 
-
-Click on the small **Clone in Desktop** button and you'll make a copy of all of these files on your machine that you can work with.  Alternatively, **Download ZIP** and then unzip the files in a familiar location on your computer.
-
-Remember where you save these Stealthbot files, since Unity needs to know where to work!
-
-## Other pages of interest:
-* [Microsoft Imagine website:](http://imagine.microsoft.com) Discover more software tools, contests, and other kits!
-* [Imagine Learn-to-Code kits and activities:](https://msdn.microsoft.com/imagine/imagine-create) Offering a wide variety of coding kits to learn from and modify!
-* [Imagine Cup website:](https://www.imaginecup.com/) Offering opportunities for students worldwide to create life-changing solutions.
-* [Microsoft Virtual Academy:](http://mva.microsoft.com) Motivated to learn even more? Explore free, online training here!
-
-## How do I help?
-Read up further on [contributing here](https://github.com/Microsoft/Imagine_stealthbot/blob/master/CONTRIBUTING.md).
-
-## Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## LICENSE
-
-Stealthbot
-
-Copyright (c) 2016 Microsoft Corporation
-
-All rights reserved. 
-
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## 🎬 A donde ir para crear la escena:
+1. Window > Sequencing > Timeline
